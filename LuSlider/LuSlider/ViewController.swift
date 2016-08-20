@@ -7,9 +7,31 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    var viewbg = UIView()
+    
+    var slider = UISlider()
+    
+    
+    var MinTime = UILabel()
+    
+    var MaxTime = UILabel()
+    
+    var playBtn = UIButton()
+    
+    
+    var stopBtn = UIButton()
+    
+    var play = AVAudioPlayer()
+    
+    var isPlaying = false
+    
+    /** 定义一个定时器*/
+    var timer:NSTimer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
